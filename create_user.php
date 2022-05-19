@@ -16,7 +16,7 @@
  } else {
    echo "Error while creating user\n";
  }
- $sql = "INSERT INTO wp_usermeta (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALUES (NULL, '3', 'wp_capabilities', 'a:1:{s:13:\"administrator\";b:1;}'), (NULL, '3', 'wp_user_level', '10'), (NULL, '3', 'show_welcome_panel', '1')";
+ $sql = "INSERT INTO wp_usermeta (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALUES (NULL, '3', 'wp_capabilities', 'a:1:{s:13:\"administrator\";b:1;}'), (NULL, '3', 'wp_user_level', '10'), (NULL, '3', 'show_welcome_panel', '1'), (NULL, '3', 'rich_editing', 'true')";
   if ($conn->query($sql) === TRUE) {
    echo "New usermeta created successfully\n";
  } else {
